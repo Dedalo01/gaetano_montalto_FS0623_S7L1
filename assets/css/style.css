@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3%;
+  background-color: #471d07;
+  color: black;
+  font-family: "Ubuntu", sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+main {
+  position: sticky;
+  top: 30%;
+}
+
+form {
+  padding: 1em;
+  border-radius: 10px;
+  border: 5px solid black;
+  box-shadow: 9px 7px 24px 0px #000000;
+  background: rgb(233, 199, 60);
+  background: linear-gradient(
+    180deg,
+    rgba(233, 199, 60, 1) 44%,
+    rgba(120, 48, 12, 1) 77%
+  );
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 0.3em;
+  margin-bottom: 0.2em;
+}
+
+form input {
+  display: block;
+  margin-bottom: 0.5em;
+  padding: 0.5em 3em 0.5em 0.8em;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(225, 222, 216);
+}
+
+form button {
+  background-color: rgb(176, 9, 9);
+  padding: 0.8em 1.5em;
+  margin-top: 1em;
+  border-radius: 20px;
+  border: 2px solid black;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  box-shadow: 0 0 24px 3px red;
+  background-color: orange;
+  color: wheat;
+}
+
+aside {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2%;
+}
+
+.card {
+  padding: 1em 1.3em;
+  margin-bottom: 1em;
+  border-radius: 10px;
+  background: rgb(233, 199, 60);
+  background: linear-gradient(
+    180deg,
+    rgba(233, 199, 60, 1) 44%,
+    rgba(120, 48, 12, 1) 77%
+  );
+  box-shadow: 9px 7px 24px 0px #000000;
+  border: 5px solid black;
+  transition: all 0.3s ease-out;
+}
+
+.card > p {
+  margin: 0.5em 0;
+}
+
+.card:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 20px 24px 3px #000000;
+}
